@@ -16,16 +16,17 @@
         </div>
         <script src="https://telegram.org/js/telegram-web-app.js"></script>
         <script>
+
             let tg = window.Telegram.WebApp;
             let pick1 = document.getElementById("pick1");
             let pick2 = document.getElementById("pick2");
+
             pick1.addEventListener("click", () => {
                 console.log(pick1.getAttribute('value'))
                 tg.sendData(pick1.getAttribute('value'));
                 tg.close();
             });
             pick2.addEventListener("click", () => {
-            
                 console.log(pick2.getAttribute('value'))
                 tg.sendData(pick2.getAttribute('value'));
                 tg.close();
