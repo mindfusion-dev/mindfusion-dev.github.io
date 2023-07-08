@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pick Bot Character</title>
+</head>
+<body>
+    <div class="container">
+        <div class="char1">
+            <button><img id="pick1" src="img/mario.png" value="mario"></button>
+        </div>
+        <div class="char2">     
+            <button><img id="pick2" src="img/enstein.png" value="einstein"></button>  
+        </div>
+        <script src="https://telegram.org/js/telegram-web-app.js"></script>
+        <script>
+            let tg = window.Telegram.WebApp;
+            let pick1 = document.getElementById("pick1");
+            let pick2 = document.getElementById("pick2");
+            pick1.addEventListener("click", () => {
+                console.log(pick1.getAttribute('value'))
+                tg.sendData(pick1.getAttribute('value'));
+                tg.close();
+            });
+            pick2.addEventListener("click", () => {
+                console.log(pick2.getAttribute('value'))
+                tg.sendData(pick2.getAttribute('value'));
+                tg.close();
+            });
+        </script>
+    </div>
+</div>    
+</body>
+</html>
