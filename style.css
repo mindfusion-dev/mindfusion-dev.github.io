@@ -10,13 +10,14 @@ body {
 }
 
 .container {
-    margin: auto;
+    width: 400px;
+    margin-left: 5%;
 }
 
 
 h1 {
     text-align: center;
-    width: 30%;
+    margin-bottom: 5px;
     font: normal normal bold 40px/48px SF Pro;
     letter-spacing: 0px;
     color: #27A7E7;
