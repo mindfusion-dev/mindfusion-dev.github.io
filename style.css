@@ -10,8 +10,8 @@ body {
 }
 
 .container {
-    width: 400px;
-    margin-left: 2px;
+    width: 394px;
+    height: var(--tg-viewport-height);
 }
 
 
@@ -20,23 +20,18 @@ h1 {
     margin-bottom: 5px;
     font: normal normal bold 40px/48px SF Pro;
     letter-spacing: 0px;
-    color: #27A7E7;
+    color: var(--tg-theme-text-color);
     opacity: 1;
 }
 
-.container .char1 {
-    margin-top: 5px;
-    margin-bottom: 10px;
-}
-
-.container .char2 {
+.container .ai {
     margin-top: 5px;
     margin-bottom: 10px;
 }
 
 button {
 	background: none;
-	color: inherit;
+	color: var(--tg-theme-button-color);
 	border: none;
 	padding: 0;
 	font: inherit;
