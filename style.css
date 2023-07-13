@@ -1,6 +1,15 @@
+@font-face {
+    font-family: "SF-Pro";
+    font-style: normal;
+    font-weight: 400;
+    src: local("SF-Pro"),
+         url("/fonts/SF-Pro.ttf") format("ttf"),
+         url("/fonts/SF-Pro-Text-Bold.otf") format("otf");
+  }
+
 body {
+    font-family: SF-Pro;
     --bg-color: var(--tg-theme-bg-color, #fff);
-    font-family: sans-serif;
     background-color: var(--bg-color);
     color: var(--tg-theme-text-color, #222);
     font-size: 14px;
@@ -10,16 +19,18 @@ body {
 }
 
 .container {
-    width: 394px;
-    height: var(--tg-viewport-height);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 
 h1 {
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 0;
     text-align: center;
-    font: normal normal bold 40px/48px SF Pro;
+    font: normal normal normal 51px/61px SF Pro;
     letter-spacing: 0px;
     color: var(--tg-theme-text-color);
     opacity: 1;
@@ -40,7 +51,9 @@ h2 {
     margin-bottom: 0px;
 }
 
-button {
+.container .btn-ai {
+    width: 392px;
+    margin: 0 50px;
 	background: none;
 	color: var(--tg-theme-button-color);
 	border: none;
@@ -66,5 +79,48 @@ img:hover {
 }
 
 img:active {
+    border: 4px solid #7f7b7b;    
+}
+
+#footer {
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height:30px;
+    width:100%;
+ }
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    bottom: 0;
+}
+
+.footer-container .chs-ai {
+    border: none;
+    width: 144px;
+    height: 48px;
+    text-align: center;
+    font: normal normal bold 40px/48px SF Pro;
+    letter-spacing: 0px;
+    color: #F5F5F5;
+    opacity: 1;
+    width: 282px;
+    height: 103px;
+    background: #27A7E7 0% 0% no-repeat padding-box;
+    box-shadow: 0px 15px 15px #00000029;
+    border-radius: 50px;
+    opacity: 1;
+}
+
+.footer-container .chs-ai:hover {
+    color: #27A7E7;
+    border: 5px solid #27A7E7;
+    background: #F5F5F5 0% 0% no-repeat padding-box;
+}
+
+.footer-container .chs-ai:active {
     border: 4px solid #7f7b7b;    
 }
