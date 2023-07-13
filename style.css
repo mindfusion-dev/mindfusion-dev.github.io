@@ -90,6 +90,7 @@ img:active {
     position: fixed;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     bottom: 0;
 }
 
