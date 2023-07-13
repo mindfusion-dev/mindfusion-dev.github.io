@@ -11,35 +11,27 @@
         <div class="ai">
             <button class="btn-ai">
                 <img id="pick1" src="img/1.png" value="1">
-                <h1>ChatGPT</h1>
-                <h2>Идеален для общения и работы с текстом</h2>
+                <h1>2D Аниме</h1>
             </button>
         </div>
         <div class="ai">
             <button class="btn-ai">
                 <img id="pick2" src="img/2.png" value="2">
-                <h1>Stable Diffusion</h1>
-                <h2>Создание фото по текстовому описанию</h2>   
+                <h1>Унисенные призраками</h1>
             </button>   
         </div>
         <div class="ai">
             <button class="btn-ai">
                 <img id="pick3" src="img/3.png" value="3">
-                <h1>Востановление старых фото</h1>
+                <h1>Пираты</h1>
             </button>
 
         </div>
         <div class="ai">
             <button class="btn-ai">
                 <img id="pick4" src="img/4.png" value="4">
-                <h1>ИИ-Портреты</h1>
+                <h1>Темная готика</h1>
             </button>  
-        </div>
-        <div class="ai">
-            <button class="btn-ai">
-                <img id="pick5" src="img/5.png" value="5">
-                <h1>ИИ-Рисунки</h1>
-            </button>
         </div>
 
         <script src="https://telegram.org/js/telegram-web-app.js"></script>
@@ -49,7 +41,6 @@
             let pick2 = document.getElementById("pick2");
             let pick3 = document.getElementById("pick3");
             let pick4 = document.getElementById("pick4");
-            let pick5 = document.getElementById("pick5");
 
             pick1.addEventListener("click", () => {
                 console.log(pick1.getAttribute('value'))
@@ -69,11 +60,6 @@
             pick4.addEventListener("click", () => {
                 console.log(pick4.getAttribute('value'))
                 tg.sendData(pick4.getAttribute('value'));
-                tg.close();
-            });
-            pick5.addEventListener("click", () => {
-                console.log(pick5.getAttribute('value'))
-                tg.sendData(pick5.getAttribute('value'));
                 tg.close();
             });
         </script>
