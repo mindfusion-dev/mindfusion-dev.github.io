@@ -2,9 +2,11 @@
 	font-family: 'SF-Pro'; 
     font-style: normal;
     font-weight: 400;
-	src: url('./fonts/SF-Pro.ttf') format('ttf'), 
-         url('./fonts/SFPRODISPLAYREGULAR.otf') format('otf');
+	src: url('fonts/SF-Pro.ttf') format('ttf'), 
+         url('./fonts/SFPRODISPLAYREGULAR.otf') format('otf'),
+         url('./fonts/SF.woff') format('woff');
   }
+
 
 body {
     font-family: SF-Pro;
@@ -87,7 +89,6 @@ img:active {
     width: 100%;
     position: fixed;
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
     bottom: 0;
 }
