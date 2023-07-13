@@ -87,7 +87,6 @@ img:active {
 .footer-container {
     width: 100%;
     position: fixed;
-    padding: 10px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -95,7 +94,7 @@ img:active {
 }
 
 .footer-container .chs-ai {
-    margin: 10px 20px;
+    margin: 10px 10px;
     border: none;
     width: 90px;
     height: 30px;
