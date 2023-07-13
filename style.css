@@ -89,7 +89,6 @@ img:active {
     position: fixed;
     padding: 10px;
     display: flex;
-    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     bottom: 0;
