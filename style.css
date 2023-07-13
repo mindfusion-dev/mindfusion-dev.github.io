@@ -3,8 +3,15 @@
     font-style: normal;
     font-weight: 400;
 	src: url('fonts/SF-Pro.ttf') format('ttf'), 
-         url('./fonts/SFPRODISPLAYREGULAR.otf') format('otf'),
-         url('./fonts/SF.woff') format('woff');
+         url('fonts/SFPRODISPLAYREGULAR.otf') format('otf'),
+         url('fonts/SF.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: "SF-Pro-Bold";
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/SF-Pro-Text-Bold.otf");
   }
 
 
@@ -12,7 +19,7 @@ body {
     font-family: SF-Pro;
     --bg-color: var(--tg-theme-bg-color, #fff);
     background-color: var(--bg-color);
-    color: var(--tg-theme-text-color, #222);
+    color: var(--tg-theme-text-color);
     font-size: 14px;
     margin: 0;
     padding: 0;
@@ -100,7 +107,7 @@ img:active {
     width: 95px;
     height: 35px;
     text-align: center;
-    font: normal normal bold 16px/20px SF Pro;
+    font: normal normal normal 16px/20px SF-Pro-Bold;
     letter-spacing: 0px;
     color: #F5F5F5;
     opacity: 1;
