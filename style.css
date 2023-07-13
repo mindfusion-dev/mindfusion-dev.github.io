@@ -2,7 +2,8 @@
 	font-family: 'SF-Pro'; 
     font-style: normal;
     font-weight: 400;
-	src: url(/fonts/SF-Pro.ttf); 
+	src: url('./fonts/SF-Pro.ttf') format('ttf'), 
+         url('./fonts/SFPRODISPLAYREGULAR.otf') format('otf');
   }
 
 body {
