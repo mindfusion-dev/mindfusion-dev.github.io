@@ -29,7 +29,7 @@ body {
     flex-flow: column wrap;
     flex-wrap: wrap;
     margin-top: 120px;
-    align-items: start;
+    align-items: center;
     height: 700px;
 }
 
@@ -60,7 +60,7 @@ h2 {
 }
 
 .container .btn-ai {
-    margin: 0 3px 0 0;
+    margin: 0;
 	background: none;
 	color: var(--tg-theme-button-color);
 	border: none;
