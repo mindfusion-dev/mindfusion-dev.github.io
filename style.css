@@ -30,7 +30,7 @@ body {
     align-items: start;
     align-content: baseline;
     flex-wrap: wrap;
-    margin-top: 140px;
+    margin-top: 120px;
 }
 
 
@@ -60,7 +60,7 @@ h2 {
 }
 
 .container .btn-ai {
-    margin: 0 20px 0 0;
+    margin: 0 3px 0 0;
 	background: none;
 	color: var(--tg-theme-button-color);
 	border: none;
@@ -71,31 +71,23 @@ h2 {
 }
 
 img .pick1 {
-    top: 1024px;
-    left: 344px;
-    width: 75px;
-    height: 115px;
+    width: 45px;
+    height: 75px;
 }
 
 img .pick2 {
-    top: 1024px;
-    left: 344px;
-    width: 75px;
-    height: 93px;
+    width: 45px;
+    height: 60px;
 }
 
 img .pick3 {
-    top: 1024px;
-    left: 344px;
-    width: 75px;
-    height: 115px;
+    width: 45px;
+    height: 75px;
 }
 
 img .pick4 {
-    top: 1024px;
-    left: 344px;
-    width: 75px;
-    height: 105px;
+    width: 45;
+    height: 68px;
 }
 
 img {
