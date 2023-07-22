@@ -24,15 +24,6 @@ body {
     color-scheme: var(--tg-color-scheme);
 }
 
-.container {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    height: 800px;
-    width: 460px;
-}
-
-
 h1 {
     margin-top: 5px;
     margin-bottom: 0;
@@ -105,11 +96,18 @@ img:active {
 
 .header-container {
     width: 460px;
-    position: fixed;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     top: 0;
+}
+
+.container {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    height: 800px;
+    width: 460px;
 }
 
 .header-container {
@@ -135,13 +133,10 @@ img:active {
   }
 
   .header-container>label {
-    margin: 7px 7px;
+    margin: 10px 10px;
     border: none;
     width: 100px;
     height: 33px;
-    text-align: center;
-    font: normal normal normal 15px/19px SF-Pro-Bold;
-    letter-spacing: 0px;
     color: #F5F5F5;
     opacity: 1;
     background: #27A7E7 0% 0% no-repeat padding-box;
