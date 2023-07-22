@@ -26,26 +26,26 @@
                 <div class="container">
                     <div class="ai">
                         <button class="btn-ai">
-                            <img class="pick1" src="img/1.png" value="2d anime">
+                            <img class="pick1" id="pick1" src="img/1.png" value="2d anime">
                             <h1>2D Аниме</h1>
                         </button>
                     </div>
                     <div class="ai">
                         <button class="btn-ai">
-                            <img class="pick2" src="img/3.png" value="pirate">
+                            <img class="pick2" id="pick2" src="img/3.png" value="pirate">
                             <h1>Пираты</h1>
                         </button>   
                     </div>
                     <div class="ai">
                         <button class="btn-ai">
-                            <img class="pick3" src="img/2.png" value="miyazaki cartoon">
+                            <img class="pick3" id="pick3" src="img/2.png" value="miyazaki cartoon">
                             <h1>Унисенные призраками</h1>
                         </button>
             
                     </div>
                     <div class="ai">
                         <button class="btn-ai">
-                            <img class="pick4" src="img/4.png" value="dark gothic">
+                            <img class="pick4" id="pick4" src="img/4.png" value="dark gothic">
                             <h1>Темная готика</h1>
                         </button>  
                     </div>
@@ -59,38 +59,36 @@
             <div id="content-5">
                 5
             </div>
-          </div>
-    </div> 
-        <script src="https://telegram.org/js/telegram-web-app.js"></script>
-        <script>
-            let tg = window.Telegram.WebApp;
-            let pick1 = document.getElementById("pick1");
-            let pick2 = document.getElementById("pick2");
-            let pick3 = document.getElementById("pick3");
-            let pick4 = document.getElementById("pick4");
-
-            pick1.addEventListener("click", () => {
-                console.log(pick1.getAttribute('value'))
-                tg.sendData(pick1.getAttribute('value'));
-                tg.close();
-            });
-            pick2.addEventListener("click", () => {
-                console.log(pick2.getAttribute('value'))
-                tg.sendData(pick2.getAttribute('value'));
-                tg.close();
-            });
-            pick3.addEventListener("click", () => {
-                console.log(pick3.getAttribute('value'))
-                tg.sendData(pick3.getAttribute('value'));
-                tg.close();
-            });
-            pick4.addEventListener("click", () => {
-                console.log(pick4.getAttribute('value'))
-                tg.sendData(pick4.getAttribute('value'));
-                tg.close();
-            });
-        </script>
+            <script src="https://telegram.org/js/telegram-web-app.js"></script>
+            <script>
+                let tg = window.Telegram.WebApp;
+                let pick1 = document.getElementById("pick1");
+                let pick2 = document.getElementById("pick2");
+                let pick3 = document.getElementById("pick3");
+                let pick4 = document.getElementById("pick4");
+    
+                pick1.addEventListener("click", () => {
+                    console.log(pick1.getAttribute('value'))
+                    tg.sendData(pick1.getAttribute('value'));
+                    tg.close();
+                });
+                pick2.addEventListener("click", () => {
+                    console.log(pick2.getAttribute('value'))
+                    tg.sendData(pick2.getAttribute('value'));
+                    tg.close();
+                });
+                pick3.addEventListener("click", () => {
+                    console.log(pick3.getAttribute('value'))
+                    tg.sendData(pick3.getAttribute('value'));
+                    tg.close();
+                });
+                pick4.addEventListener("click", () => {
+                    console.log(pick4.getAttribute('value'))
+                    tg.sendData(pick4.getAttribute('value'));
+                    tg.close();
+                });
+            </script>
+        </div>
     </div>
-</div>
 </body>
 </html>
