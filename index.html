@@ -9,50 +9,58 @@
 <body>
     <div class="header">
         <div class="header-container">
-            <button class="chs-ai">
-                Для тебя
-            </button>
-            <button class="chs-ai">
-                Аниме
-            </button> 
-            <button class="chs-ai">
-                Студия
-            </button>
-            <button class="chs-ai">
-                Комиксы
-            </button>
-            <button class="chs-ai">
-                Картины
-            </button>
-        </div> 
+            <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked>
+            <label for="tab-btn-1">Для тебя</label>
+            <input type="radio" name="tab-btn" id="tab-btn-2" value="">
+            <label for="tab-btn-2">Аниме</label>
+            <input type="radio" name="tab-btn" id="tab-btn-3" value="">
+            <label for="tab-btn-3">Студия</label>
+            <input type="radio" name="tab-btn" id="tab-btn-4" value="">
+            <label for="tab-btn-4">Комиксы</label>
+            <input type="radio" name="tab-btn" id="tab-btn-5" value="">
+            <label for="tab-btn-5">Картины</label>
+            <div id="content-1">
+                1
+            </div>
+            <div id="content-2">
+                <div class="container">
+                    <div class="ai">
+                        <button class="btn-ai">
+                            <img class="pick1" src="img/1.png" value="2d anime">
+                            <h1>2D Аниме</h1>
+                        </button>
+                    </div>
+                    <div class="ai">
+                        <button class="btn-ai">
+                            <img class="pick2" src="img/3.png" value="pirate">
+                            <h1>Унисенные призраками</h1>
+                        </button>   
+                    </div>
+                    <div class="ai">
+                        <button class="btn-ai">
+                            <img class="pick3" src="img/2.png" value="miyazaki cartoon">
+                            <h1>Пираты</h1>
+                        </button>
+            
+                    </div>
+                    <div class="ai">
+                        <button class="btn-ai">
+                            <img class="pick4" src="img/4.png" value="dark gothic">
+                            <h1>Темная готика</h1>
+                        </button>  
+                    </div>
+            </div>
+            <div id="content-3">
+                3
+            </div>
+            <div id="content-4">
+                4
+            </div>
+            <div id="content-5">
+                5
+            </div>
+          </div>
     </div> 
-    <div class="container">
-        <div class="ai">
-            <button class="btn-ai">
-                <img class="pick1" src="img/1.png" value="2d anime">
-                <h1>2D Аниме</h1>
-            </button>
-        </div>
-        <div class="ai">
-            <button class="btn-ai">
-                <img class="pick2" src="img/3.png" value="pirate">
-                <h1>Унисенные призраками</h1>
-            </button>   
-        </div>
-        <div class="ai">
-            <button class="btn-ai">
-                <img class="pick3" src="img/2.png" value="miyazaki cartoon">
-                <h1>Пираты</h1>
-            </button>
-
-        </div>
-        <div class="ai">
-            <button class="btn-ai">
-                <img class="pick4" src="img/4.png" value="dark gothic">
-                <h1>Темная готика</h1>
-            </button>  
-        </div>
-
         <script src="https://telegram.org/js/telegram-web-app.js"></script>
         <script>
             let tg = window.Telegram.WebApp;
