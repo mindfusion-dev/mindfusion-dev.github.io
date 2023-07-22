@@ -44,12 +44,10 @@ h1 {
 }
 
 h2 {
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin: 6px;
     text-align: center;
-    font: normal normal normal 14px/20px SF-Pro;
+    font: normal normal normal 15px/19px SF-Pro-Bold;
     letter-spacing: 0px;
-    color: #27A7E7;
     opacity: 1;
 }
 
@@ -137,7 +135,7 @@ img:active {
   }
 
   .header-container>label {
-    margin: 10px 10px;
+    margin: 7px 7px;
     border: none;
     width: 100px;
     height: 33px;
