@@ -77,7 +77,7 @@ img:active {
 
 .container .pick1 {
     width: 160px;
-    height: 235px;
+    height: 220px;
 }
 
 .container .pick3 {
@@ -87,12 +87,12 @@ img:active {
 
 .container .pick2 {
     width: 160px;
-    height: 225px;
+    height: 215px;
 }
 
 .container .pick4 {
     width: 160px;
-    height: 235px;
+    height: 220px;
 }
 
 .header-container {
@@ -153,5 +153,5 @@ img:active {
   .header-container>input[type="radio"]:checked+label {
     border: 2px solid #27A7E7; 
     color: #27A7E7;
-    background: #F5F5F5 0% 0% no-repeat padding-box;
+    background: var(--bg-color) 0% 0% no-repeat padding-box;
   }
