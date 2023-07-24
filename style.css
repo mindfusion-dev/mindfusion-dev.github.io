@@ -75,8 +75,21 @@ h2 {
 snap-tabs {
     display: flex;
     flex-direction: column;
+
     overflow: hidden;
     position: relative;
+  
+    & > section {
+      /* указываем использовать всё место */
+      block-size: 100%;
+    }
+  
+    & > header {
+      /* защита от случая, когда <section> требует 100 % */
+      flex-shrink: 0;
+      /* учет особенностей различных браузеров */
+      min-block-size: fit-content;
+    }
 }
 
 img {
@@ -130,8 +143,8 @@ snap-tabs>header a {
 }
 
 snap-tabs>section>article {
-  scroll-snap-align: inherit;
-  overflow-y: scroll;
+  scroll-snap-align: start;
+  overflow-y: auto;
   overscroll-behavior-y: contain;
   padding: var(--space-2) var(--space-3);
 }
@@ -167,6 +180,8 @@ nav {
 }
 
 section {
+  block-size: 100%;
+
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: 100%;
@@ -174,6 +189,7 @@ section {
 
 article {
   scroll-snap-align: start;
+
   overflow-y: auto;
   overscroll-behavior-y: contain;
 }
