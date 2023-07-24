@@ -77,18 +77,6 @@ snap-tabs {
     flex-direction: column;
     overflow: hidden;
     position: relative;
-  
-    & > section {
-      /* указываем использовать всё место */
-      block-size: 100%;
-    }
-  
-    & > header {
-      /* защита от случая, когда <section> требует 100 % */
-      flex-shrink: 0;
-      /* учет особенностей различных браузеров */
-      min-block-size: fit-content;
-    }
 }
 
 img {
