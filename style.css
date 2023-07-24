@@ -143,8 +143,8 @@ snap-tabs>header a {
 }
 
 snap-tabs>section>article {
-  scroll-snap-align: start;
-  overflow-y: auto;
+  scroll-snap-align: inherit;
+  overflow-y: scroll;
   overscroll-behavior-y: contain;
   padding: var(--space-2) var(--space-3);
 }
