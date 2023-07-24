@@ -12,6 +12,11 @@
     src: url("fonts/SF-Pro-Text-Bold.otf");
   }
 
+  @media (prefers-reduced-motion: no-preference) {
+    .scroll-snap-x {
+      scroll-behavior: smooth;
+    }
+  }
 
 body {
     font-family: SF-Pro;
