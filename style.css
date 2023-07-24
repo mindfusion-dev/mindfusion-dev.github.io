@@ -52,8 +52,8 @@ h2 {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-  height: 580px;
-  width: 90%;
+  height: 600px;
+  width: 100%;
 }
 
 .container .ai {
@@ -62,7 +62,7 @@ h2 {
 }
 
 .container .btn-ai {
-    margin: 0;
+  margin: 0;
 	background: none;
 	color: var(--tg-theme-button-color);
 	border: none;
@@ -194,7 +194,7 @@ article {
 }
 
 button {
-  margin: 10px 10px;
+  margin: 7px 7px;
   border: none;
   width: 100px;
   height: 33px;
