@@ -48,11 +48,12 @@ h2 {
     opacity: 1;
 }
 
-.container {
+container {
   display: flex;
-  flex-flow: column wrap;
+  flex-wrap: wrap;
   align-items: center;
-  height: 600px;
+  justify-content: space-around;
+  height: 700px;
   width: 100%;
 }
 
@@ -193,7 +194,7 @@ article {
   overscroll-behavior-y: contain;
 }
 
-button {
+nav button {
   margin: 7px 7px;
   border: none;
   width: 100px;
@@ -211,7 +212,7 @@ button {
 
 
 
-.selected {
+nav .selected {
   border: 2px solid #27A7E7; 
   color: #27A7E7;
   background: var(--bg-color) 0% 0% no-repeat padding-box;
