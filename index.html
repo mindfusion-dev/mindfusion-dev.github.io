@@ -12,19 +12,19 @@
             <header class="scroll-snap-x">
               <nav>
                 <a href="#for_you" active>
-                    <input type='button' value='Для тебя' class='x'>   
+                    <button class="selected">Для тебя</button>    
                 </a>
                 <a href="#anime">
-                    <input type='button' value='Аниме' class='x'>                
+                    <button>Аниме</button>                  
                 </a>
                 <a href="#studio">
-                    <input type='button' value='Сттудия' class='x'> 
+                    <button>Студия</button>   
                 </a>
                 <a href="#comix">
-                    <input type='button' value='Комиксы' class='x'>                  
+                    <button>Комиксы</button>                   
                 </a>
                 <a href="#picture">
-                    <input type='button' value='Картины' class='x'> 
+                    <button>Картины</button>  
                 </a>
               </nav>
               <span class="snap-indicator"></span>
@@ -95,6 +95,14 @@
           </snap-tabs>
             <script src="https://telegram.org/js/telegram-web-app.js"></script>
             <script>
+                const buttons = document.querySelectorAll("button");
+                buttons.forEach(button => {
+                button.addEventListener("click", event => {
+                    buttons.forEach(b => b.classList.remove("selected"));
+                    event.target.classList.toggle("selected");
+                });
+                });
+
                 let tg = window.Telegram.WebApp;
                 let pick1 = document.getElementById("pick1");
                 let pick2 = document.getElementById("pick2");
