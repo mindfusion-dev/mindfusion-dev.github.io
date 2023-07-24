@@ -193,7 +193,7 @@ article {
   overscroll-behavior-y: contain;
 }
 
-label {
+button {
   margin: 10px 10px;
   border: none;
   width: 100px;
@@ -204,4 +204,10 @@ label {
   box-shadow: 0px 15px 15px #00000029;
   border-radius: 50px;
   opacity: 1;
+}
+
+button:active {
+  border: 2px solid #27A7E7; 
+  color: #27A7E7;
+  background: var(--bg-color) 0% 0% no-repeat padding-box;
 }
