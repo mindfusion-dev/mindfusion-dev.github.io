@@ -53,7 +53,6 @@ h2 {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
-  height: 700px;
   width: 100%;
 }
 
@@ -169,7 +168,9 @@ snap-tabs>section>article {
 
 nav {
   display: flex;
-  & a {
+}
+
+nav a {
     height: 80px;
     position:inherit;
     scroll-snap-align: start;
@@ -177,11 +178,9 @@ nav {
     align-items: center;
     white-space: nowrap;
   }
-}
 
 section {
   block-size: 100%;
-
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: 100%;
@@ -189,12 +188,13 @@ section {
 
 article {
   scroll-snap-align: start;
-
   overflow-y: auto;
   overscroll-behavior-y: contain;
 }
 
 nav button {
+  appearance:initial;
+  position:initial;
   margin: 7px 7px;
   border: none;
   width: 100px;
