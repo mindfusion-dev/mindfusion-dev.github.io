@@ -49,7 +49,6 @@
                               <img class="pick3" id="pick3" src="img/3.gif" value="spirited away cartoon style">
                               <h1>Унисенные призраками</h1>
                           </button>
-              
                       </div>
                       <div class="ai">
                           <button class="btn-ai">
@@ -59,31 +58,31 @@
                       </div>
                       <div class="ai">
                         <button class="btn-ai">
-                            <img class="pick4" id="pick4" src="img/vampire killer.gif" value="anime vampire killer style">
+                            <img class="pick4" id="pick5" src="img/vampire killer.gif" value="anime vampire killer style">
                             <h1>Убийца Вампиров</h1>
                         </button>  
                     </div>
                     <div class="ai">
                         <button class="btn-ai">
-                            <img class="pick4" id="pick4" src="img/bikini.gif" value="anime bikini girl style">
+                            <img class="pick4" id="pick6" src="img/bikini.gif" value="anime bikini girl style">
                             <h1>Бикини Girl</h1>
                         </button>  
                     </div>
                     <div class="ai">
                         <button class="btn-ai">
-                            <img class="pick4" id="pick4" src="img/cyberp.gif" value="cyberpunk 2077 style">
+                            <img class="pick4" id="pick7" src="img/cyberp.gif" value="cyberpunk 2077 style">
                             <h1>Киберпанк</h1>
                         </button>  
                     </div>
                     <div class="ai">
                         <button class="btn-ai">
-                            <img class="pick4" id="pick4" src="img/zf.gif" value="anime z fighters style">
+                            <img class="pick4" id="pick8" src="img/zf.gif" value="anime z fighters style">
                             <h1>Z Fighters</h1>
                         </button>  
                     </div>
                     <div class="ai">
                         <button class="btn-ai">
-                            <img class="pick2" id="pick2" src="img/elf.gif" value="elf lord of the rings style">
+                            <img class="pick2" id="pick9" src="img/elf.gif" value="elf lord of the rings style">
                             <h1>Эльфы</h1>
                         </button>  
                     </div>
@@ -137,6 +136,11 @@
                 let pick2 = document.getElementById("pick2");
                 let pick3 = document.getElementById("pick3");
                 let pick4 = document.getElementById("pick4");
+                let pick5 = document.getElementById("pick5");
+                let pick6 = document.getElementById("pick6");
+                let pick7 = document.getElementById("pick7");
+                let pick8 = document.getElementById("pick8");
+                let pick9 = document.getElementById("pick9");
     
                 pick1.addEventListener("click", () => {
                     console.log(pick1.getAttribute('value'))
@@ -156,6 +160,31 @@
                 pick4.addEventListener("click", () => {
                     console.log(pick4.getAttribute('value'))
                     tg.sendData(pick4.getAttribute('value'));
+                    tg.close();
+                });
+                pick5.addEventListener("click", () => {
+                    console.log(pick5.getAttribute('value'))
+                    tg.sendData(pick5.getAttribute('value'));
+                    tg.close();
+                });
+                pick6.addEventListener("click", () => {
+                    console.log(pick6.getAttribute('value'))
+                    tg.sendData(pick6.getAttribute('value'));
+                    tg.close();
+                });
+                pick7.addEventListener("click", () => {
+                    console.log(pick7.getAttribute('value'))
+                    tg.sendData(pick7.getAttribute('value'));
+                    tg.close();
+                });
+                pick8.addEventListener("click", () => {
+                    console.log(pick8.getAttribute('value'))
+                    tg.sendData(pick8.getAttribute('value'));
+                    tg.close();
+                });
+                pick8.addEventListener("click", () => {
+                    console.log(pick9.getAttribute('value'))
+                    tg.sendData(pick9.getAttribute('value'));
                     tg.close();
                 });
             </script>
