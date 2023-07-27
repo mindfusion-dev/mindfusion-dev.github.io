@@ -49,7 +49,6 @@ h2 {
 }
 
 .container {
-  margin-bottom: 100px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
