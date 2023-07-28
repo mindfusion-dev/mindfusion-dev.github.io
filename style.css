@@ -64,6 +64,7 @@ h2 {
   justify-content: space-around;
   width: auto;
   height: auto;
+  margin-top: 90px;
 }
 
 .container .ai {
@@ -135,10 +136,6 @@ img:active {
 .container .pick4 {
   width: 160px;
   height: 220px;
-}
-
-section {
-  margin-top: 90px;
 }
 
 header {
