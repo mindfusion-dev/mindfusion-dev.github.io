@@ -28,15 +28,6 @@ body {
     color-scheme: var(--tg-color-scheme);
 }
 
-.device {
-  display: flex;
-  flex-direction: column;
-  inline-size: 300px;
-  block-size: 500px;
-  border-radius: 1ch;
-  overflow: hidden;
-}
-
 h1 {
     margin-top: 5px;
     width: 160px;
@@ -101,7 +92,7 @@ snap-tabs {
 }
 
 img {
-  box-shadow: 0px 15px 15px #00000029;
+  box-shadow: 0px 15px 15px var(--tg-theme-button-color);
   border: 3px solid var(--tg-theme-hover-color);
   border-radius: 50px;
   background-color: var(--tg-theme-bg-color);
@@ -213,7 +204,7 @@ nav button {
   color: var(--tg-theme-text-color);
   opacity: 1;
   background: var(--tg-theme-button-color) 0% 0% no-repeat padding-box;
-  box-shadow: 0px 15px 15px #00000029;
+  box-shadow: 0px 15px 15px var(--tg-theme-button-color);
   border-radius: 50px;
   text-align: center;
   font: normal normal normal 15px/19px SF-Pro-Bold;
