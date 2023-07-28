@@ -213,7 +213,7 @@ nav button {
 }
 
 nav .selected {
-  border: 2px solid var(--tg-theme-active-color); 
+  border: 2px solid var(--tg-theme-hover-color); 
   color: var(--tg-theme-text-color);
   background: var(--bg-color) 0% 0% no-repeat padding-box;
 }
