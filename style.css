@@ -20,9 +20,8 @@
 
 body {
     font-family: SF-Pro;
-    --bg-color: var(--tg-theme-bg-color, #fff);
-    background-color: var(--bg-color);
     color: var(--tg-theme-text-color);
+    background: var(--tg-theme-bg-color);
     font-size: 14px;
     margin: 0;
     padding: 0;
@@ -45,7 +44,7 @@ h1 {
     text-align: center;
     font: normal normal normal 21px/28px SF-Pro;
     letter-spacing: 0px;
-    color: #27A7E7;
+    color: var(--tg-theme-text-color);
     opacity: 1;
 }
 
@@ -211,9 +210,9 @@ nav button {
   border: none;
   width: 100px;
   height: 33px;
-  color: #F5F5F5;
+  color: var(--tg-theme-text-color);
   opacity: 1;
-  background: #27A7E7 0% 0% no-repeat padding-box;
+  background: var(--tg-theme-button-color) 0% 0% no-repeat padding-box;
   box-shadow: 0px 15px 15px #00000029;
   border-radius: 50px;
   text-align: center;
