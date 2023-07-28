@@ -92,7 +92,7 @@ snap-tabs {
 }
 
 img {
-  box-shadow: 0px 15px 15px var(--tg-theme-button-text-color);
+  /* box-shadow: 0px 15px 15px var(--tg-theme-button-text-color); */
   border: 3px solid var(--tg-theme-secondary-bg-color);
   border-radius: 50px;
   background-color: var(--tg-theme-bg-color);
