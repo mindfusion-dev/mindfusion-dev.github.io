@@ -200,7 +200,7 @@ nav button {
   color: var(--tg-theme-text-color);
   opacity: 1;
   background: var(--tg-theme-button-color) 0% 0% no-repeat padding-box;
-  box-shadow: 0px 15px 15px var(--tg-theme-text-color);
+  /* box-shadow: 0px 15px 15px var(--tg-theme-text-color); */
   border-radius: 50px;
   text-align: center;
   font: normal normal normal 15px/19px SF-Pro-Bold;
