@@ -222,7 +222,7 @@ nav button {
 }
 
 nav .selected {
-  border: 2px solid #27A7E7; 
-  color: #27A7E7;
+  border: 2px solid var(--tg-theme-active-color); 
+  color: var(--tg-theme-text-color);
   background: var(--bg-color) 0% 0% no-repeat padding-box;
 }
