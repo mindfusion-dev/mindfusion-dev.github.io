@@ -12,7 +12,7 @@
             <header class="scroll-snap-x">
               <nav>
                 <a href="#for_you" active>
-                    <button class="selected">Для тебя</button>    
+                    <button class="selected" id="you">Для тебя</button>    
                 </a>
                 <a href="#anime">
                     <button>Аниме</button>                  
@@ -258,6 +258,14 @@
           </snap-tabs>
             <script src="https://telegram.org/js/telegram-web-app.js"></script>
             <script>
+                window.onload = function(){
+                    document.getElementById('you').click();
+                    
+                  var scriptTag = document.createElement("script");
+                  scriptTag.src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js";
+                  document.getElementsByTagName("head")[0].appendChild(scriptTag);
+                  }
+
                 const buttons = document.querySelectorAll("button");
                 buttons.forEach(button => {
                 button.addEventListener("click", event => {
