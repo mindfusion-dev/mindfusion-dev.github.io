@@ -100,7 +100,7 @@ img {
 }
 
 img:active {
-  border: 4px solid var(--tg-theme-button-text-color);
+  border: 4px solid var(--tg-theme-secondary-bg-color);
 }
 
 .container .pick1 {
