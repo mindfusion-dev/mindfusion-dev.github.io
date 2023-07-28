@@ -29,6 +29,15 @@ body {
     color-scheme: var(--tg-color-scheme);
 }
 
+.device {
+  display: flex;
+  flex-direction: column;
+  inline-size: 300px;
+  block-size: 500px;
+  border-radius: 1ch;
+  overflow: hidden;
+}
+
 h1 {
     margin-top: 5px;
     width: 160px;
@@ -54,6 +63,7 @@ h2 {
   align-items: center;
   justify-content: space-around;
   width: auto;
+  height: auto;
 }
 
 .container .ai {
@@ -75,7 +85,6 @@ h2 {
 snap-tabs {
     display: flex;
     flex-direction: column;
-
     overflow: hidden;
     position: relative;
   
@@ -91,17 +100,6 @@ snap-tabs {
       min-block-size: fit-content;
     }
 }
-
-/* .none img {
-  border: none;
-  background-color: var(--tg-theme-bg-color, #fff);
-  opacity: 1;  
-}
-
-.container .pick-n {
-  width: 400px;
-  height: 80px;
-} */
 
 img {
   box-shadow: 0px 15px 15px #00000029;
@@ -139,9 +137,15 @@ img:active {
   height: 220px;
 }
 
+section {
+  margin-top: 90px;
+}
+
 header {
   display: flex;
   flex-direction: column;
+  position: fixed;
+  top: 0;
 }
 
 snap-tabs>header a {
