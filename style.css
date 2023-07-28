@@ -93,7 +93,7 @@ snap-tabs {
 
 img {
   box-shadow: 0px 15px 15px var(--tg-theme-button-color);
-  border: 3px solid var(--tg-theme-hover-color);
+  border: 3px solid var(--tg-theme-hint-color);
   border-radius: 50px;
   background-color: var(--tg-theme-bg-color);
   opacity: 1;
@@ -213,7 +213,7 @@ nav button {
 }
 
 nav .selected {
-  border: 2px solid var(--tg-theme-hover-color); 
+  border: 2px solid var(--tg-theme-hint-color); 
   color: var(--tg-theme-text-color);
   background: var(--bg-color) 0% 0% no-repeat padding-box;
 }
