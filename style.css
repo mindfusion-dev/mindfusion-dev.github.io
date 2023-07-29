@@ -213,5 +213,5 @@ nav button {
 nav .selected {
   border: 2px solid var(--tg-theme-button-color); 
   color: var(--tg-theme-text-color);
-  background: var(--bg-color);
+  background: var(--tg-theme-bg-color);
 }
