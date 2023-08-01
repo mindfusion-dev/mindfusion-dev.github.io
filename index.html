@@ -260,7 +260,7 @@
             <script>
                 function sendRequest(userId, value) {
                     var xhr = new XMLHttpRequest();
-                    xhr.open('GET', 'http://65.108.81.17:8000/user-pick?user_id=' + '775221255' + '&value=' + 'front');
+                    xhr.open('GET', 'http://65.108.81.17:8000/user-pick?user_id=' + userId. + '&value=' + value);
                     xhr.send();
                 }
                 window.onload = function(){
@@ -276,7 +276,7 @@
                 });
 
                 let tg = window.Telegram.WebApp;
-                userId = userId = tg.initDataUnsafe.user.id;
+                userId = tg.initDataUnsafe.user.id;
                 tg.expand();
 
                 let pick1 = document.getElementById("pick1");
