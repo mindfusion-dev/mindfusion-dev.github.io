@@ -260,7 +260,7 @@
             <script>
                 function sendRequest(userId, value) {
                     var xhr = new XMLHttpRequest();
-                    xhr.open('GET', 'https://oneai.ru:8080/user-pick?user_id=' + userId + '&value=' + value);
+                    xhr.open('GET', ('https://oneai.ru:8080/user-pick?user_id=' + userId + '&value=' + value));
                     xhr.send();
                 }
                 window.onload = function(){
@@ -316,6 +316,8 @@
                 pick1.addEventListener("click", () => {
                     console.log(pick1.getAttribute('value'));
                     tg.sendData(pick1.getAttribute('value'));
+                    console.log(userId);
+                    console.log(('https://oneai.ru:8080/user-pick?user_id=' + userId + '&value=' + value));
                     sendRequest(userId, pick1.getAttribute('value'));
                     tg.close();
                 });
