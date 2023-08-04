@@ -260,9 +260,11 @@
             <script>
                 function sendRequest(userId, value) {
                     var xhr = new XMLHttpRequest();
-                    xhr.open('GET', ('https://oneai.ru:8080/user-pick?user_id=' + userId + '&value=' + encodeURIComponent(value)), true);
+                    url = 'https://oneai.ru:8080/user-pick?user_id=' + userId + '&value=' + encodeURIComponent(value);
+                    xhr.open('GET', url, true);
                     xhr.send();
-                    console.log(xhr.response)
+                    console.log(xhr.status)
+                    console.log(url)
                     console.log('sent')
                 }
                 window.onload = function(){
