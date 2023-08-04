@@ -259,7 +259,7 @@
             <script src="https://telegram.org/js/telegram-web-app.js"></script>
             <script>
                 function sendRequest(userId, value) {
-                    var xhr = new XMLHttpRequest();
+                    let xhr = new XMLHttpRequest();
                     url = 'https://oneai.ru:8080/user-pick?user_id=' + userId + '&value=' + encodeURIComponent(value);
                     xhr.open('GET', url, true);
                     xhr.send();
