@@ -261,8 +261,17 @@
                 function sendRequest(userId, value) {
                     let xhr = new XMLHttpRequest();
                     url = 'https://oneai.ru:8080/user-pick?user_id=' + userId + '&value=' + encodeURIComponent(value);
-                    xhr.open('GET', url, true);
-                    xhr.send();
+                    xhr.open('GET', url, false);
+                    try {
+                        xhr.send();
+                        if (xhr.status != 200) {
+                          console.log(`Error ${xhr.status}: ${xhr.statusText}`);
+                        } else {
+                          console.log(xhr.response);
+                        }
+                      } catch(err) {
+                        console.log("Request failed");
+                      }
                     console.log(xhr.status)
                     console.log(url)
                     console.log('sent')
