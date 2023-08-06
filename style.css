@@ -55,6 +55,7 @@ h2 {
   width: auto;
   height: auto;
   margin-top: 45px;
+  padding-bottom: 40px;
 }
 
 .container .ai {
@@ -183,7 +184,6 @@ section {
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: 100%;
-  padding-bottom: 50px;
 }
 
 article {
