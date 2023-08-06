@@ -53,9 +53,8 @@ h2 {
   align-items: center;
   justify-content: space-around;
   width: auto;
-  height: 1000px;
+  height: auto;
   margin-top: 45px;
-  margin-bottom: 30px;
 }
 
 .container .ai {
@@ -129,7 +128,7 @@ header {
   display: flex;
   flex-direction: column;
   position: sticky;
-  top: 0px;
+  top: 62px;
   left: 10px;
 }
 
@@ -184,13 +183,14 @@ section {
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: 100%;
+  padding-bottom: 30px;
 }
 
 article {
   scroll-snap-align: start;
   overflow-y: auto;
   overscroll-behavior-y: contain;
-  margin-bottom: 25px;
+  padding-bottom: 30px;
 }
 
 nav button {
