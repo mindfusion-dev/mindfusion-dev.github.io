@@ -127,7 +127,7 @@ header {
   display: flex;
   flex-direction: column;
   position: sticky;
-  top: 10px;
+  top: 0px;
   left: 10px;
 }
 
