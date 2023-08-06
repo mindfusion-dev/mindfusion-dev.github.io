@@ -189,6 +189,7 @@ article {
   scroll-snap-align: start;
   overflow-y: auto;
   overscroll-behavior-y: contain;
+  margin-bottom: 25px;
 }
 
 nav button {
