@@ -53,8 +53,9 @@ h2 {
   align-items: center;
   justify-content: space-around;
   width: auto;
-  height: auto;
+  height: 1000px;
   margin-top: 45px;
+  margin-bottom: 30px;
 }
 
 .container .ai {
@@ -128,7 +129,7 @@ header {
   display: flex;
   flex-direction: column;
   position: sticky;
-  top: 10px;
+  top: 0px;
   left: 10px;
 }
 
