@@ -9,7 +9,7 @@
 <body>
     <div class="header">
         <snap-tabs>
-            <header class="scroll-snap-x">
+            <header class="scroll-snap-x" id="head">
               <nav>
                 <a href="#for_you" active>
                     <button class="selected" id="you">Для тебя</button>    
@@ -276,8 +276,11 @@
                     console.log(url)
                     console.log('sent')
                 }
-                window.onload = function(){
-                    document.getElementById('you').click();
+                function changeItem() {
+                    document.getElementById('head').style.top="62px";
+                  }
+                window.onscroll = function(){
+                    document.getElementById('head').style.top="62px";
                   }
 
                 const buttons = document.querySelectorAll("button");
@@ -285,6 +288,7 @@
                 button.addEventListener("click", event => {
                     buttons.forEach(b => b.classList.remove("selected"));
                     event.target.classList.toggle("selected");
+                    changeItem();
                 });
                 });
 
