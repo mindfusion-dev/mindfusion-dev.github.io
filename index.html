@@ -140,7 +140,7 @@
                     </div>
                     <div class="ai">
                         <button class="btn-ai">
-                            <img class="pick1" id="pick33" src="img/apirate.gif" value="wanostyle">
+                            <img class="pick1" id="pick34" src="img/apirate.gif" value="wanostyle">
                             <h1>Аниме-Пираты</h1>
                         </button>
                     </div>
@@ -329,6 +329,7 @@
                 let pick31 = document.getElementById("pick31");
                 let pick33 = document.getElementById("pick33");
                 let pick32 = document.getElementById("pick32");
+                let pick34 = document.getElementById("pick34");
 
                 pick1.addEventListener("click", () => {
                     console.log(pick1.getAttribute('value'));
@@ -495,6 +496,11 @@
                 pick32.addEventListener("click", () => {
                     console.log(pick32.getAttribute('value'));
                     sendRequest(userId, pick32.getAttribute('value'));                   
+                    tg.close();
+                });
+                pick34.addEventListener("click", () => {
+                    console.log(pick34.getAttribute('value'));
+                    sendRequest(userId, pick34.getAttribute('value'));                   
                     tg.close();
                 });
             </script>
