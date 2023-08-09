@@ -327,8 +327,8 @@
                 let pick29 = document.getElementById("pick29");
                 let pick30 = document.getElementById("pick30");
                 let pick31 = document.getElementById("pick31");
-                let pick32 = document.getElementById("pick32");
                 let pick33 = document.getElementById("pick33");
+                let pick32 = document.getElementById("pick32");
 
                 pick1.addEventListener("click", () => {
                     console.log(pick1.getAttribute('value'));
@@ -487,14 +487,14 @@
                     sendRequest(userId, pick31.getAttribute('value'));                   
                     tg.close();
                 });
-                pick32.addEventListener("click", () => {
-                    console.log(pick32.getAttribute('value'));
-                    sendRequest(userId, pick32.getAttribute('value'));                   
-                    tg.close();
-                });
                 pick33.addEventListener("click", () => {
                     console.log(pick33.getAttribute('value'));
                     sendRequest(userId, pick33.getAttribute('value'));                   
+                    tg.close();
+                });
+                pick32.addEventListener("click", () => {
+                    console.log(pick32.getAttribute('value'));
+                    sendRequest(userId, pick32.getAttribute('value'));                   
                     tg.close();
                 });
             </script>
