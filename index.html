@@ -251,13 +251,10 @@
                 let pick2 = document.getElementById("pick2");
                 let pick3 = document.getElementById("pick3");
                 let pick4 = document.getElementById("pick4");
-                let pick5 = document.getElementById("pick5");
-                let pick6 = document.getElementById("pick6");
                 let pick7 = document.getElementById("pick7");
                 let pick8 = document.getElementById("pick8");
                 let pick9 = document.getElementById("pick9");
                 let pick10 = document.getElementById("pick10");
-                let pick11 = document.getElementById("pick11");
                 let pick12 = document.getElementById("pick12");
                 let pick13 = document.getElementById("pick13");
                 let pick14 = document.getElementById("pick14");
@@ -275,9 +272,6 @@
                 let pick26 = document.getElementById("pick26");
                 let pick27 = document.getElementById("pick27");
                 let pick28 = document.getElementById("pick28");
-                let pick29 = document.getElementById("pick29");
-                let pick30 = document.getElementById("pick30");
-                let pick31 = document.getElementById("pick31");
                 let pick33 = document.getElementById("pick33");
                 let pick32 = document.getElementById("pick32");
                 let pick34 = document.getElementById("pick34");
@@ -302,16 +296,6 @@
                     sendRequest(userId, pick4.getAttribute('value'));
                     tg.close();
                 });
-                pick5.addEventListener("click", () => {
-                    console.log(pick5.getAttribute('value'));
-                    sendRequest(userId, pick5.getAttribute('value'));
-                    tg.close();
-                });
-                pick6.addEventListener("click", () => {
-                    console.log(pick6.getAttribute('value'))
-                    sendRequest(userId, pick6.getAttribute('value'))
-                    tg.close();
-                });
                 pick7.addEventListener("click", () => {
                     console.log(pick7.getAttribute('value'));
                     sendRequest(userId, pick7.getAttribute('value'));
@@ -331,11 +315,6 @@
                     console.log(pick10.getAttribute('value'));
                     tg.sendData(pick10.getAttribute('value'));
                     sendRequest(userId, pick10.getAttribute('value'));                  
-                    tg.close();
-                });
-                pick11.addEventListener("click", () => {
-                    console.log(pick11.getAttribute('value'));
-                    sendRequest(userId, pick11.getAttribute('value'));                  
                     tg.close();
                 });
                 pick12.addEventListener("click", () => {
@@ -375,7 +354,6 @@
                 });
                 pick19.addEventListener("click", () => {
                     console.log(pick19.getAttribute('value'));
-                    tg.sendData(pick19.getAttribute('value'));
                     sendRequest(userId, pick19.getAttribute('value'));                    
                     tg.close();
                 });
@@ -422,21 +400,6 @@
                 pick28.addEventListener("click", () => {
                     console.log(pick28.getAttribute('value'));
                     sendRequest(userId, pick28.getAttribute('value'));                   
-                    tg.close();
-                });
-                pick29.addEventListener("click", () => {
-                    console.log(pick29.getAttribute('value'));
-                    sendRequest(userId, pick29.getAttribute('value'));                   
-                    tg.close();
-                });
-                pick30.addEventListener("click", () => {
-                    console.log(pick30.getAttribute('value'));
-                    sendRequest(userId, pick30.getAttribute('value'));                   
-                    tg.close();
-                });
-                pick31.addEventListener("click", () => {
-                    console.log(pick31.getAttribute('value'));
-                    sendRequest(userId, pick31.getAttribute('value'));                   
                     tg.close();
                 });
                 pick33.addEventListener("click", () => {
