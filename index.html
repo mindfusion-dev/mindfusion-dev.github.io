@@ -216,7 +216,7 @@
                     xhr.onload = () => {
                         setTimeout(function() {
                             tg.close();
-                          }, 500);
+                          }, 2000);
                       };
                     xhr.send(null);
                     console.log(xhr.status)
@@ -274,7 +274,9 @@
                 pick1.addEventListener("click", () => {
                     console.log(pick1.getAttribute('value'));
                     sendRequest(userId, pick1.getAttribute('value'));
-                    tg.close();
+                    setTimeout(function() {
+                        tg.close();
+                      }, 2000);
                 });
                 pick2.addEventListener("click", () => {
                     console.log(pick2.getAttribute('value'))
