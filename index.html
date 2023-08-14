@@ -139,21 +139,6 @@
                     console.log(url)
                     console.log('sent')
                 }
-                function changeItem() {
-                    document.getElementById('head').style.top="62px";
-                  }
-                window.onscroll = function(){
-                    changeItem();
-                  }
-
-                const buttons = document.querySelectorAll("button");
-                buttons.forEach(button => {
-                button.addEventListener("click", event => {
-                    buttons.forEach(b => b.classList.remove("selected"));
-                    event.target.classList.toggle("selected");
-                    changeItem();
-                });
-                });
 
                 let tg = window.Telegram.WebApp;
                 userId = tg.initDataUnsafe.user.id;
