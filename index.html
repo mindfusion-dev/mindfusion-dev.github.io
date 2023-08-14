@@ -112,24 +112,6 @@
 <div class="container">
     <div class="ai">
         <button class="btn-ai">
-            <img class="pick4" id="pick22" src="img/4.gif" value="a black and white, gothic, comics style">
-            <h1>Темная готика</h1>
-        </button>  
-    </div>   
-    <div class="ai">
-        <button class="btn-ai">
-            <img class="pick2" id="pick23" src="img/doodle.gif" value="(Doodle draw),(Hand-drawn illustrations),(Sketchy lines),(Cartoony style),(Scribbles),(Creative doodles),(Cute characters),(Whimsical artwork)">
-            <h1>Doodle</h1>
-        </button>  
-    </div>
-    <div class="ai">
-        <button class="btn-ai">
-            <img class="pick2" id="pick24" src="img/simpson.gif" value="The Simpsons animated sitcom style">
-            <h1>Симпсоны</h1>
-        </button>  
-    </div>
-    <div class="ai">
-        <button class="btn-ai">
             <img class="pick3" id="pick25" src="img/Marvel.gif" value="marvel comics superhero">
             <h1>Marvel Comix</h1>
         </button>  
@@ -188,9 +170,6 @@
                 let pick14 = document.getElementById("pick14");
                 let pick16 = document.getElementById("pick16");
                 let pick17 = document.getElementById("pick17");
-                let pick22 = document.getElementById("pick22");
-                let pick23 = document.getElementById("pick23");
-                let pick24 = document.getElementById("pick24");
                 let pick25 = document.getElementById("pick25");
                 let pick26 = document.getElementById("pick26");
                 let pick27 = document.getElementById("pick27");
@@ -272,27 +251,6 @@
                 pick17.addEventListener("click", () => {
                     console.log(pick17.getAttribute('value'));
                     sendRequest(userId, pick17.getAttribute('value'));                   
-                    setTimeout(function() {
-                        tg.close();
-                      }, 1000);
-                });
-                pick22.addEventListener("click", () => {
-                    console.log(pick22.getAttribute('value'));
-                    sendRequest(userId, pick22.getAttribute('value'));                   
-                    setTimeout(function() {
-                        tg.close();
-                      }, 1000);
-                });
-                pick23.addEventListener("click", () => {
-                    console.log(pick23.getAttribute('value'));
-                    sendRequest(userId, pick23.getAttribute('value'));                   
-                    setTimeout(function() {
-                        tg.close();
-                      }, 1000);
-                });
-                pick24.addEventListener("click", () => {
-                    console.log(pick24.getAttribute('value'));
-                    sendRequest(userId, pick24.getAttribute('value'))                   
                     setTimeout(function() {
                         tg.close();
                       }, 1000);
