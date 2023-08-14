@@ -7,206 +7,140 @@
     <title>Выбирай стиль изображения...</title>
 </head>
 <body>
-    <div class="header">
-        <snap-tabs>
-            <header class="scroll-snap-x" id="head">
-              <nav>
-                <a href="#for_you" active>
-                    <button class="selected" id="you">Для тебя</button>    
-                </a>
-                <a href="#anime">
-                    <button>Аниме</button>                  
-                </a>
-                <a href="#studio">
-                    <button>Студия</button>   
-                </a>
-                <a href="#comix">
-                    <button>Комиксы</button>                   
-                </a>
-              </nav>
-              <span class="snap-indicator"></span>
-            </header>
-            <section>
-                <article id="for_you">
-                  <div class="container">
-                      <div class="ai">
-                          <button class="btn-ai">
-                              <img class="pick1" id="pick1" src="img/1.gif" value="Person in 2d anime style">
-                              <h1>2D Аниме</h1>
-                          </button>
-                      </div>
-                      <div class="ai">
-                          <button class="btn-ai">
-                              <img class="pick2" id="pick2" src="img/2.gif" value="A pirate">
-                              <h1>Пираты</h1>
-                          </button>   
-                        </div>
-                      <div class="ai">
-                          <button class="btn-ai">
-                              <img class="pick4" id="pick4" src="img/4.gif" value="a black and white, gothic, comics style">
-                              <h1>Темная готика</h1>
-                          </button>  
-                        </div>
-                        <div class="ai">
-                        <button class="btn-ai">
-                            <img class="pick4" id="pick7" src="img/cyberp.gif" value="cyberpunk 2077 style">
-                            <h1>Киберпанк</h1>
-                        </button>  
-                        </div>
-                        <div class="ai">
-                        <button class="btn-ai">
-                            <img class="pick4" id="pick8" src="img/zf.gif" value="a person in toriyama akira anime style">
-                            <h1>Z Fighters</h1>
-                        </button>  
-                        </div>
-                        <div class="ai">
-                        <button class="btn-ai">
-                            <img class="pick2" id="pick9" src="img/elf.gif" value="(Lord of the Realm),(Royal regalia),(Golden crown),(Ornate cape),(Jeweled scepter),(Regal attire),(Lord's castle),(Throne room),(Courtiers),(Loyal subjects),(Knight in armor),(Banner of the realm),(Great hall),(Tapestry),(Feast table),(Grand staircase),(Crest of the realm),(Enchanted forest),(Majestic mountains)">
-                            <h1>Lord of the Realm</h1>
-                        </button>  
-                        </div>
-                        <div class="ai">
-                        <button class="btn-ai">
-                            <img class="pick1" id="pick17" src="img/avatar.gif" value="Avatar 2 movie style">
-                            <h1>Аватар</h1>
-                        </button>  
-                        </div>
-                </div>
-                </article>
-                <article id="anime">
-                <div class="container">
-                    <div class="ai">
-                        <button class="btn-ai">
-                            <img class="pick2" id="pick12" src="img/zf.gif" value="a person in toriyama akira anime style">
-                            <h1>Z Fighters</h1>
-                        </button>  
-                    </div>
-                    <div class="ai">
-                        <button class="btn-ai">
-                            <img class="pick4" id="pick13" src="img/bikini.gif" value="a person anime bikini girl style">
-                            <h1>Бикини Girl</h1>
-                        </button>  
-                    </div>
-                    <div class="ai">
-                        <button class="btn-ai">
-                            <img class="pick3" id="pick3" src="img/3.gif" value="A person in ghibli studio anime style">
-                            <h1>Унисенные призраками</h1>
-                        </button>
-                    </div>
-                    <div class="ai">
-                        <button class="btn-ai">
-                            <img class="pick4" id="pick14" src="img/vampire killer.gif" value="kimetsu no yaiba anime style">
-                            <h1>Убийца Вампиров</h1>
-                        </button>  
-                    </div>
-                    <div class="ai">
-                        <button class="btn-ai">
-                            <img class="pick1" id="pick15" src="img/1.gif" value="Person in 2d anime style">
-                            <h1>2D Аниме</h1>
-                        </button>
-                    </div>
-                    <div class="ai">
-                        <button class="btn-ai">
-                            <img class="pick1" id="pick16" src="img/naruto.gif" value="a pesrson in naruto style, a ninja">
-                            <h1>Наруто</h1>
-                        </button>
-                    </div>
-                    <div class="ai">
-                        <button class="btn-ai">
-                            <img class="pick1" id="pick34" src="img/apirate.gif" value="a person in One Piece anime style">
-                            <h1>Аниме-Пираты</h1>
-                        </button>
-                    </div>
-                </div>
-                </article>
-                <article id="studio">
-                <div class="container">
-                    <div class="ai">
-                        <button class="btn-ai">
-                            <img class="pick2" id="pick18" src="img/elf.gif" value="(Lord of the Realm),(Royal regalia),(Golden crown),(Ornate cape),(Jeweled scepter),(Regal attire),(Lord's castle),(Throne room),(Courtiers),(Loyal subjects),(Knight in armor),(Banner of the realm),(Great hall),(Tapestry),(Feast table),(Grand staircase),(Crest of the realm),(Enchanted forest),(Majestic mountains)">
-                            <h1>Lord of the Realms</h1>
-                        </button>  
-                    </div>
-                    <div class="ai">
-                        <button class="btn-ai">
-                            <img class="pick1" id="pick19" src="img/avatar.gif" value="a person in Avatar 2 movie style">
-                            <h1>Аватар</h1>
-                        </button>  
-                    </div>
-                    <div class="ai">
-                        <button class="btn-ai">
-                            <img class="pick4" id="pick20" src="img/cyberp.gif" value="Cyberpunk 2077 style">
-                            <h1>Киберпанк</h1>
-                        </button>  
-                    </div> 
-                    <div class="ai">
-                        <button class="btn-ai">
-                            <img class="pick1" id="pick21" src="img/2.gif" value="A pirate">
-                            <h1>Пираты</h1>
-                        </button>   
-                    </div>
-                    <div class="ai">
-                        <button class="btn-ai">
-                            <img class="pick1" id="pick27" src="img/eg.gif" value="egyptian pharaoh, ancient egyptian style">
-                            <h1>Египет</h1>
-                        </button>   
-                    </div>
-                    <div class="ai">
-                        <button class="btn-ai">
-                            <img class="pick1" id="pick28" src="img/g.gif" value="a person in dark gothic style">
-                            <h1>Готика</h1>
-                        </button>   
-                    </div>
-                    <div class="ai">
-                        <button class="btn-ai">
-                            <img class="pick1" id="pick32" src="img/barbie.gif" value="a blonde person in Barbie movie style">
-                            <h1>Барби</h1>
-                        </button>   
-                    </div>
-                    <div class="ai">
-                        <button class="btn-ai">
-                            <img class="pick1" id="pick33" src="img/ws.gif" value="cowboy in a hat">
-                            <h1>Вестерн</h1>
-                        </button>   
-                    </div>
-                </div>               
-                </article>
-              <article id="comix">
-                <div class="container">
-                    <div class="ai">
-                        <button class="btn-ai">
-                            <img class="pick4" id="pick22" src="img/4.gif" value="a black and white, gothic, comics style">
-                            <h1>Темная готика</h1>
-                        </button>  
-                    </div>   
-                    <div class="ai">
-                        <button class="btn-ai">
-                            <img class="pick2" id="pick23" src="img/doodle.gif" value="(Doodle draw),(Hand-drawn illustrations),(Sketchy lines),(Cartoony style),(Scribbles),(Creative doodles),(Cute characters),(Whimsical artwork)">
-                            <h1>Doodle</h1>
-                        </button>  
-                    </div>
-                    <div class="ai">
-                        <button class="btn-ai">
-                            <img class="pick2" id="pick24" src="img/simpson.gif" value="The Simpsons animated sitcom style">
-                            <h1>Симпсоны</h1>
-                        </button>  
-                    </div>
-                    <div class="ai">
-                        <button class="btn-ai">
-                            <img class="pick3" id="pick25" src="img/Marvel.gif" value="marvel comics superhero">
-                            <h1>Marvel Comix</h1>
-                        </button>  
-                    </div>
-                    <div class="ai">
-                        <button class="btn-ai">
-                            <img class="pick2" id="pick26" src="img/ac.gif" value="american comics style">
-                            <h1>American Comix</h1>
-                        </button>  
-                    </div>                 
-                </div>                
-              </article>
-            </section>
-          </snap-tabs>
+    <div class="container">
+        <div class="ai">
+            <button class="btn-ai">
+                <img class="pick1" id="pick1" src="img/1.gif" value="Person in 2d anime style">
+                <h1>2D Аниме</h1>
+            </button>
+        </div>
+        <div class="ai">
+            <button class="btn-ai">
+                <img class="pick2" id="pick2" src="img/2.gif" value="A pirate">
+                <h1>Пираты</h1>
+            </button>   
+        </div>
+        <div class="ai">
+            <button class="btn-ai">
+                <img class="pick4" id="pick4" src="img/4.gif" value="a black and white, gothic, comics style">
+                <h1>Темная готика</h1>
+            </button>  
+        </div>
+        <div class="ai">
+        <button class="btn-ai">
+            <img class="pick4" id="pick7" src="img/cyberp.gif" value="cyberpunk 2077 style">
+            <h1>Киберпанк</h1>
+        </button>  
+        </div>
+        <div class="ai">
+        <button class="btn-ai">
+            <img class="pick4" id="pick8" src="img/zf.gif" value="a person in toriyama akira anime style">
+            <h1>Z Fighters</h1>
+        </button>  
+        </div>
+        <div class="ai">
+        <button class="btn-ai">
+            <img class="pick2" id="pick9" src="img/elf.gif" value="(Lord of the Realm),(Royal regalia),(Golden crown),(Ornate cape),(Jeweled scepter),(Regal attire),(Lord's castle),(Throne room),(Courtiers),(Loyal subjects),(Knight in armor),(Banner of the realm),(Great hall),(Tapestry),(Feast table),(Grand staircase),(Crest of the realm),(Enchanted forest),(Majestic mountains)">
+            <h1>Lord of the Realm</h1>
+        </button>  
+        </div>
+        <div class="ai">
+        <button class="btn-ai">
+            <img class="pick1" id="pick17" src="img/avatar.gif" value="Avatar 2 movie style">
+            <h1>Аватар</h1>
+        </button>  
+        </div>
+</div>
+<div class="container">
+    <div class="ai">
+        <button class="btn-ai">
+            <img class="pick4" id="pick13" src="img/bikini.gif" value="a person anime bikini girl style">
+            <h1>Бикини Girl</h1>
+        </button>  
+    </div>
+    <div class="ai">
+        <button class="btn-ai">
+            <img class="pick3" id="pick3" src="img/3.gif" value="A person in ghibli studio anime style">
+            <h1>Унисенные призраками</h1>
+        </button>
+    </div>
+    <div class="ai">
+        <button class="btn-ai">
+            <img class="pick4" id="pick14" src="img/vampire killer.gif" value="kimetsu no yaiba anime style">
+            <h1>Убийца Вампиров</h1>
+        </button>  
+    </div>
+    <div class="ai">
+        <button class="btn-ai">
+            <img class="pick1" id="pick16" src="img/naruto.gif" value="a pesrson in naruto style, a ninja">
+            <h1>Наруто</h1>
+        </button>
+    </div>
+    <div class="ai">
+        <button class="btn-ai">
+            <img class="pick1" id="pick34" src="img/apirate.gif" value="a person in One Piece anime style">
+            <h1>Аниме-Пираты</h1>
+        </button>
+    </div>
+</div>
+<div class="container">
+    <div class="ai">
+        <button class="btn-ai">
+            <img class="pick1" id="pick27" src="img/eg.gif" value="egyptian pharaoh, ancient egyptian style">
+            <h1>Египет</h1>
+        </button>   
+    </div>
+    <div class="ai">
+        <button class="btn-ai">
+            <img class="pick1" id="pick28" src="img/g.gif" value="a person in dark gothic style">
+            <h1>Готика</h1>
+        </button>   
+    </div>
+    <div class="ai">
+        <button class="btn-ai">
+            <img class="pick1" id="pick32" src="img/barbie.gif" value="a blonde person in Barbie movie style">
+            <h1>Барби</h1>
+        </button>   
+    </div>
+    <div class="ai">
+        <button class="btn-ai">
+            <img class="pick1" id="pick33" src="img/ws.gif" value="cowboy in a hat">
+            <h1>Вестерн</h1>
+        </button>   
+    </div>
+</div>               
+<div class="container">
+    <div class="ai">
+        <button class="btn-ai">
+            <img class="pick4" id="pick22" src="img/4.gif" value="a black and white, gothic, comics style">
+            <h1>Темная готика</h1>
+        </button>  
+    </div>   
+    <div class="ai">
+        <button class="btn-ai">
+            <img class="pick2" id="pick23" src="img/doodle.gif" value="(Doodle draw),(Hand-drawn illustrations),(Sketchy lines),(Cartoony style),(Scribbles),(Creative doodles),(Cute characters),(Whimsical artwork)">
+            <h1>Doodle</h1>
+        </button>  
+    </div>
+    <div class="ai">
+        <button class="btn-ai">
+            <img class="pick2" id="pick24" src="img/simpson.gif" value="The Simpsons animated sitcom style">
+            <h1>Симпсоны</h1>
+        </button>  
+    </div>
+    <div class="ai">
+        <button class="btn-ai">
+            <img class="pick3" id="pick25" src="img/Marvel.gif" value="marvel comics superhero">
+            <h1>Marvel Comix</h1>
+        </button>  
+    </div>
+    <div class="ai">
+        <button class="btn-ai">
+            <img class="pick2" id="pick26" src="img/ac.gif" value="american comics style">
+            <h1>American Comix</h1>
+        </button>  
+    </div>                 
+</div>
             <script src="https://telegram.org/js/telegram-web-app.js"></script>
             <script>
                 function sendRequest(userId, value) {
@@ -250,16 +184,10 @@
                 let pick7 = document.getElementById("pick7");
                 let pick8 = document.getElementById("pick8");
                 let pick9 = document.getElementById("pick9");
-                let pick12 = document.getElementById("pick12");
                 let pick13 = document.getElementById("pick13");
                 let pick14 = document.getElementById("pick14");
-                let pick15 = document.getElementById("pick15");
                 let pick16 = document.getElementById("pick16");
                 let pick17 = document.getElementById("pick17");
-                let pick18 = document.getElementById("pick18");
-                let pick19 = document.getElementById("pick19");
-                let pick20 = document.getElementById("pick20");
-                let pick21 = document.getElementById("pick21");
                 let pick22 = document.getElementById("pick22");
                 let pick23 = document.getElementById("pick23");
                 let pick24 = document.getElementById("pick24");
@@ -320,13 +248,6 @@
                         tg.close();
                       }, 1000);
                 });
-                pick12.addEventListener("click", () => {
-                    console.log(pick12.getAttribute('value'))
-                    sendRequest(userId, pick12.getAttribute('value'))                    
-                    setTimeout(function() {
-                        tg.close();
-                      }, 1000);
-                });
                 pick13.addEventListener("click", () => {
                     console.log(pick13.getAttribute('value'));
                     sendRequest(userId, pick13.getAttribute('value'));                
@@ -341,13 +262,6 @@
                         tg.close();
                       }, 1000);
                 });
-                pick15.addEventListener("click", () => {
-                    console.log(pick15.getAttribute('value'));
-                    sendRequest(userId, pick15.getAttribute('value'));                    
-                    setTimeout(function() {
-                        tg.close();
-                      }, 1000);
-                });
                 pick16.addEventListener("click", () => {
                     console.log(pick16.getAttribute('value'));
                     sendRequest(userId, pick16.getAttribute('value'));                    
@@ -358,34 +272,6 @@
                 pick17.addEventListener("click", () => {
                     console.log(pick17.getAttribute('value'));
                     sendRequest(userId, pick17.getAttribute('value'));                   
-                    setTimeout(function() {
-                        tg.close();
-                      }, 1000);
-                });
-                pick18.addEventListener("click", () => {
-                    console.log(pick18.getAttribute('value'));
-                    sendRequest(userId, pick18.getAttribute('value'));                   
-                    setTimeout(function() {
-                        tg.close();
-                      }, 1000);
-                });
-                pick19.addEventListener("click", () => {
-                    console.log(pick19.getAttribute('value'));
-                    sendRequest(userId, pick19.getAttribute('value'));                    
-                    setTimeout(function() {
-                        tg.close();
-                      }, 1000);
-                });
-                pick20.addEventListener("click", () => {
-                    console.log(pick20.getAttribute('value'))
-                    sendRequest(userId, pick20.getAttribute('value'))                   
-                    setTimeout(function() {
-                        tg.close();
-                      }, 1000);
-                });
-                pick21.addEventListener("click", () => {
-                    console.log(pick21.getAttribute('value'));
-                    sendRequest(userId, pick21.getAttribute('value'));                   
                     setTimeout(function() {
                         tg.close();
                       }, 1000);
