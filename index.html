@@ -101,8 +101,12 @@
                 function sendRequestMB(userId, userName) {
                     let xhr = new XMLHttpRequest();
                     url = 'https://oneai.ru:8080/loaded-event?user_id=' + userId + '&userName=' + encodeURIComponent(userName);
-                    xhr.open('GET', url, false);
-                    xhr.send(null);
+                    xhr.open('GET', url, true);
+                    xhr.onload = () => {
+                        setTimeout(function() {
+                            tg.close();
+                          }, 1300);
+                      };
                     console.log(xhr.status)
                     console.log(url)
                     console.log('sentMB')
@@ -111,8 +115,8 @@
                 let tg = window.Telegram.WebApp;
                 userId = tg.initDataUnsafe.user.id;
                 userName = tg.initDataUnsafe.user.username;
-                sendRequestMB(userId, userName);
                 tg.expand();
+                sendRequestMB(userId, userName);
 
                 let pick1 = document.getElementById("pick1");
                 let pick2 = document.getElementById("pick2");
