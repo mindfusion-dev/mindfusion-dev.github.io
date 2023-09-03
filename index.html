@@ -100,7 +100,7 @@
 
                 function sendRequestMB(userId, userName) {
                     let xhr = new XMLHttpRequest();
-                    url = 'https://oneai.ru:8080/loaded-event?user_id=' + userId + '&userName=' + encodeURIComponent(userName);
+                    url = 'https://oneai.ru:8080/loaded-event?user_id=' + userId + '&user_name=' + encodeURIComponent(userName);
                     xhr.open('GET', url, true);
                     xhr.onload = () => {
                         setTimeout(function() {
