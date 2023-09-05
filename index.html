@@ -113,7 +113,6 @@
                 tg.expand();
                 sendRequestMB(userId, userName);
 
-                let pick1 = document.getElementById("pick1");
                 let pick2 = document.getElementById("pick2");
                 let pick3 = document.getElementById("pick3");
                 let pick4 = document.getElementById("pick4");
@@ -126,13 +125,6 @@
                 let pick27 = document.getElementById("pick27");
                 let pick33 = document.getElementById("pick33");
 
-                pick1.addEventListener("click", () => {
-                    console.log(pick1.getAttribute('value'));
-                    sendRequest(userId, pick1.getAttribute('value'));
-                    setTimeout(function() {
-                        tg.close();
-                      }, 1300);
-                });
                 pick2.addEventListener("click", () => {
                     console.log(pick2.getAttribute('value'))
                     sendRequest(userId, pick2.getAttribute('value'));
